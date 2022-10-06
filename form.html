@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h3 style="text-align:center;">Form Biodata
+    </h3>
+    
+    <form action="" method="Post">
+        <table>
+            <tr>
+                <td width="180">NIM</td>
+                <td width="30">:</td>
+                <td><input type="text" name="NIM"></td>
+            </tr>
+            <tr>
+                <td>NAMA</td>
+                <td>:</td>
+                <td><input type="text" name="NAMA" size="34" ></td>
+            </tr>
+            <tr>
+                <td>JENIS KELAMIN</td>
+                <td>:</td>
+                <td><input type="radio" name="rbjeniskelamain" value="Pria" checked>Pria
+                    <input type="radio" name="rbjeniskelamain" value="Pria">Wanita</td>
+            </tr>
+            <tr>
+                <td>JURUSAN</td>
+                <td>:</td>
+                <td><select name="lstjurusan"><option value="">Pilih...</option>
+                                              <option value="S1TI">S1TI</option>
+                                              <option value="D3TI">D3TI</option>
+                                              <option value="D3MI">D3MI</option></select></td>
+            </tr>
+            <tr>
+                <td>HOBBY</td>
+                <td>:</td>
+                <td><input type="checkbox" name="chkhobby[]" value="Komputer" checked>Komputer
+                    <input type="checkbox" name="chkhobby[]" value="Musik">Musik
+                    <input type="checkbox" name="chkhobby[]" value="Olahraga">Olahraga
+                    <input type="checkbox" name="chkhobby[]" value="Trevelling">Trevelling</td>
+            </tr>
+            <tr>
+                <td>CATATAN</td>
+                <td>:</td>
+                <td><textarea name="CATATAN" cols="25" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td>:</td>
+                <td><input type="file" name="FOTO" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td>:</td>
+                <td><input type="text" name="EMAIL" size="34"></td>
+            </tr>
+            <tr>
+                <td>SANDI LOGIN</td>
+                <td>:</td>
+                <td><input type="text" name="SANDI" size="34"></td>
+            </tr>
+            <tr>
+                <td>ULANGI SANDI LOGIN</td>
+                <td>:</td>
+                <td><input type="text" size="34"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" name="Simpan" value="Simpan">
+                    <input type="submit" name="Batal" value="Batal">
+                    <button type="button" onclick="alert('Dilarang Menyontek!')">Peringatan</button>
+                </td>
+            </tr>
+        </table> 
+    </form>
+</body>
+</html>
